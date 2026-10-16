@@ -132,6 +132,7 @@ section{padding-block:110px}
 .item h4::after{content:"";flex:1;border-bottom:1px dotted rgba(224,168,62,.35);transform:translateY(-5px)}
 .item .v{font-family:var(--display);font-size:20px;color:var(--mel-claro);font-variant-numeric:tabular-nums;white-space:nowrap}
 .item p{grid-column:1/-1;color:var(--fumaca);font-size:15px}
+.item-foto{grid-column:1/-1;width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--madeira);margin:10px 0 6px;filter:saturate(1.05) brightness(.92)}
 .subtitulo{font-family:var(--caps);letter-spacing:.2em;font-size:14px;color:var(--mel);margin:44px 0 6px}
 .subtitulo:first-child{margin-top:0}
 .nota{margin-top:40px;font-size:14px;color:var(--fumaca)}
@@ -429,6 +430,7 @@ async function carregarCardapio() {
     const d = el("div", "item");
     d.appendChild(el("h4", "", i.nome));
     d.appendChild(el("span", "v", i.preco || ""));
+    if (i.foto) { const f = el("img", "item-foto"); f.src = i.foto; f.alt = i.nome; f.loading = "lazy"; d.appendChild(f); }
     if (i.descricao) d.appendChild(el("p", "", i.descricao));
     return d;
   }
