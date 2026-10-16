@@ -1,0 +1,71 @@
+# Mantenha aqui o "backend" que você já configurou.
+# Exemplo (troque pelo seu):
+backend:
+  name: git-gateway
+  branch: main
+
+locale: pt
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+collections:
+  - name: "cardapio"
+    label: "Cardápio"
+    files:
+      - name: "cardapio"
+        label: "Cardápio completo"
+        file: "content/cardapio.json"
+        format: "json"
+        fields:
+          - label: "Rodízio"
+            name: "rodizio"
+            widget: "object"
+            fields:
+              - { label: "Nome da aba", name: "titulo_aba", widget: "string", default: "Rodízio" }
+              - label: "Preços do rodízio"
+                name: "precos"
+                widget: "list"
+                label_singular: "preço"
+                summary: "{{fields.titulo}} - {{fields.valor}}"
+                fields:
+                  - { label: "Título", name: "titulo", widget: "string", hint: "Ex.: Almoço" }
+                  - { label: "Valor", name: "valor", widget: "string", hint: "Ex.: R$ 119,90" }
+                  - { label: "Descrição", name: "descricao", widget: "string", required: false }
+                  - { label: "Destacar este preço", name: "destaque", widget: "boolean", default: false, required: false }
+              - label: "Outras opções"
+                name: "extras"
+                widget: "list"
+                label_singular: "opção"
+                required: false
+                summary: "{{fields.nome}} - {{fields.preco}}"
+                fields:
+                  - { label: "Nome", name: "nome", widget: "string" }
+                  - { label: "Preço", name: "preco", widget: "string" }
+                  - { label: "Descrição", name: "descricao", widget: "string", required: false }
+
+          - label: "Abas do cardápio"
+            name: "abas"
+            widget: "list"
+            label_singular: "aba"
+            summary: "{{fields.nome}}"
+            fields:
+              - { label: "Nome da aba", name: "nome", widget: "string", hint: "Ex.: Sobremesas" }
+              - { label: "Foto da aba (opcional)", name: "foto", widget: "image", required: false }
+              - label: "Grupos"
+                name: "grupos"
+                widget: "list"
+                label_singular: "grupo"
+                summary: "{{fields.titulo}}"
+                fields:
+                  - { label: "Título do grupo (opcional)", name: "titulo", widget: "string", required: false, hint: "Ex.: Bovinos" }
+                  - label: "Itens"
+                    name: "itens"
+                    widget: "list"
+                    label_singular: "item"
+                    summary: "{{fields.nome}} - {{fields.preco}}"
+                    fields:
+                      - { label: "Nome", name: "nome", widget: "string" }
+                      - { label: "Preço", name: "preco", widget: "string", hint: "Ex.: R$ 22,90, Incluso ou Rodízio" }
+                      - { label: "Descrição", name: "descricao", widget: "string", required: false }
+
+          - { label: "Observação no fim do cardápio", name: "observacao", widget: "string", required: false }

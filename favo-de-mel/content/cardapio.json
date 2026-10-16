@@ -1,0 +1,119 @@
+{
+  "rodizio": {
+    "titulo_aba": "Rodízio",
+    "precos": [
+      { "titulo": "Almoço", "valor": "R$ 119,90", "descricao": "Segunda a sexta, das 11h às 15h30.", "destaque": false },
+      { "titulo": "Jantar e fins de semana", "valor": "R$ 139,90", "descricao": "Segunda a sexta no jantar, sábados, domingos e feriados o dia todo.", "destaque": true },
+      { "titulo": "Crianças", "valor": "R$ 59,90", "descricao": "De 6 a 12 anos. Até 5 anos não paga.", "destaque": false }
+    ],
+    "extras": [
+      { "nome": "Só buffet e japonês", "preco": "R$ 79,90", "descricao": "Buffet completo sem o rodízio de carnes." },
+      { "nome": "Aniversariante do dia", "preco": "Cortesia", "descricao": "Na mesa com pelo menos 4 pagantes, mediante documento." }
+    ]
+  },
+  "abas": [
+    {
+      "nome": "Carnes",
+      "foto": "",
+      "grupos": [
+        {
+          "titulo": "Bovinos",
+          "itens": [
+            { "nome": "Picanha", "preco": "Rodízio", "descricao": "A estrela da casa, com a capa de gordura dourada no fogo." },
+            { "nome": "Picanha com alho", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Fraldinha", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Maminha", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Costela de chão", "preco": "Rodízio", "descricao": "Assada por horas até soltar do osso." },
+            { "nome": "Contrafilé", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Cupim", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Alcatra com queijo", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Ancho", "preco": "Rodízio", "descricao": "" }
+          ]
+        },
+        {
+          "titulo": "Suínos, aves e cordeiro",
+          "itens": [
+            { "nome": "Costelinha suína ao mel", "preco": "Rodízio", "descricao": "Pincelada com mel na hora de sair da brasa. O corte que dá nome à casa." },
+            { "nome": "Lombo com parmesão", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Linguiça toscana", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Coração de frango", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Coxinha da asa", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Frango com bacon", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Paleta de cordeiro", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Abacaxi com canela", "preco": "Rodízio", "descricao": "" },
+            { "nome": "Pão de queijo, polenta e banana", "preco": "Rodízio", "descricao": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Buffet e japonês",
+      "foto": "assets/japones.jpg",
+      "grupos": [
+        {
+          "titulo": "Ilha de japonês",
+          "itens": [
+            { "nome": "Sashimi de salmão", "preco": "Incluso", "descricao": "" },
+            { "nome": "Sushis, uramakis e hossomakis", "preco": "Incluso", "descricao": "" },
+            { "nome": "Joe de salmão e temaki do dia", "preco": "Incluso", "descricao": "" }
+          ]
+        },
+        {
+          "titulo": "Buffet",
+          "itens": [
+            { "nome": "Saladas e folhas", "preco": "Incluso", "descricao": "Mais de 20 opções, com molhos da casa." },
+            { "nome": "Pratos quentes", "preco": "Incluso", "descricao": "Arroz, feijão tropeiro, farofa, mandioca, risotos e massas do dia." },
+            { "nome": "Queijos e frios", "preco": "Incluso", "descricao": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Sobremesas",
+      "foto": "",
+      "grupos": [
+        {
+          "titulo": "",
+          "itens": [
+            { "nome": "Petit gâteau com sorvete", "preco": "R$ 32,90", "descricao": "Chocolate quente por dentro e sorvete de creme." },
+            { "nome": "Pudim de leite", "preco": "R$ 22,90", "descricao": "Receita da casa, com calda de caramelo." },
+            { "nome": "Papaya com cassis", "preco": "R$ 26,90", "descricao": "" },
+            { "nome": "Mousse de maracujá", "preco": "R$ 21,90", "descricao": "" }
+          ]
+        },
+        {
+          "titulo": "",
+          "itens": [
+            { "nome": "Torta de limão", "preco": "R$ 24,90", "descricao": "" },
+            { "nome": "Abacaxi grelhado com sorvete e mel", "preco": "R$ 27,90", "descricao": "Abacaxi da brasa, sorvete de creme e um fio de mel." },
+            { "nome": "Taça de sorvete", "preco": "R$ 19,90", "descricao": "Três bolas, sabores do dia." },
+            { "nome": "Brownie com sorvete", "preco": "R$ 29,90", "descricao": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "Bebidas",
+      "foto": "",
+      "grupos": [
+        {
+          "titulo": "Sem álcool",
+          "itens": [
+            { "nome": "Refrigerante lata", "preco": "R$ 8,90", "descricao": "" },
+            { "nome": "Suco natural, jarra", "preco": "R$ 24,90", "descricao": "" },
+            { "nome": "Água com ou sem gás", "preco": "R$ 6,90", "descricao": "" }
+          ]
+        },
+        {
+          "titulo": "Com álcool",
+          "itens": [
+            { "nome": "Chopp claro, 300 ml", "preco": "R$ 13,90", "descricao": "" },
+            { "nome": "Caipirinha de limão", "preco": "R$ 26,90", "descricao": "" },
+            { "nome": "Taça de vinho tinto", "preco": "R$ 29,90", "descricao": "Carta completa de vinhos no salão." }
+          ]
+        }
+      ]
+    }
+  ],
+  "observacao": "Preços por pessoa. Taxa de serviço opcional de 10%. Valores podem mudar sem aviso."
+}
