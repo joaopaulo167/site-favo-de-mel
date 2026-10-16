@@ -13,4 +13,4 @@ collections:
         file: "content/inicio.md"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Texto", name: "body", widget: "markdown" 
+          - { label: "Texto", name: "body", widget: "markdown"}
