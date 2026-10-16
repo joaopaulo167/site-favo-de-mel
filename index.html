@@ -1,4 +1,10 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+</head>
+<body style="margin:0">
 <title>Churrascaria Favo de Mel</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Churrascaria Favo de Mel. Rodízio de carnes nobres, buffet completo, japonês e sobremesas. Reserve sua mesa.">
@@ -133,6 +139,7 @@ section{padding-block:110px}
 .japones img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:sepia(.2) saturate(1.05) brightness(.82);border:1px solid var(--madeira)}
 @media (max-width:820px){.japones{grid-template-columns:1fr}.japones img{aspect-ratio:4/3}}
 
+
 /* galeria */
 .galeria{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:1fr 1fr;gap:16px;height:min(620px,90vw)}
 .galeria figure{margin:0;position:relative;overflow:hidden;border:1px solid var(--madeira)}
@@ -254,112 +261,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;
         <p>O rodízio inclui todas as carnes, o buffet completo e a ilha de japonês. Bebidas e sobremesas são cobradas à parte.</p>
       </div>
 
-      <div class="abas" role="tablist" aria-label="Seções do cardápio">
-        <button role="tab" id="t-rodizio" aria-controls="p-rodizio" aria-selected="true">Rodízio</button>
-        <button role="tab" id="t-carnes" aria-controls="p-carnes" aria-selected="false" tabindex="-1">Carnes</button>
-        <button role="tab" id="t-buffet" aria-controls="p-buffet" aria-selected="false" tabindex="-1">Buffet e japonês</button>
-        <button role="tab" id="t-sobremesas" aria-controls="p-sobremesas" aria-selected="false" tabindex="-1">Sobremesas</button>
-        <button role="tab" id="t-bebidas" aria-controls="p-bebidas" aria-selected="false" tabindex="-1">Bebidas</button>
-      </div>
-
-      <div class="painel" role="tabpanel" id="p-rodizio" aria-labelledby="t-rodizio">
-        <div class="precos">
-          <div class="preco">
-            <h3>Almoço</h3><span class="valor"><small>R$</small>119,90</span>
-            <p>Segunda a sexta, das 11h às 15h30.</p>
-          </div>
-          <div class="preco destaque">
-            <h3>Jantar e fins de semana</h3><span class="valor"><small>R$</small>139,90</span>
-            <p>Segunda a sexta no jantar, sábados, domingos e feriados o dia todo.</p>
-          </div>
-          <div class="preco">
-            <h3>Crianças</h3><span class="valor"><small>R$</small>59,90</span>
-            <p>De 6 a 12 anos. Até 5 anos não paga.</p>
-          </div>
-        </div>
-        <div class="colunas">
-          <div class="item"><h4>Só buffet e japonês</h4><span class="v">R$ 79,90</span><p>Buffet completo sem o rodízio de carnes.</p></div>
-          <div class="item"><h4>Aniversariante do dia</h4><span class="v">Cortesia</span><p>Na mesa com pelo menos 4 pagantes, mediante documento.</p></div>
-        </div>
-      </div>
-
-      <div class="painel" role="tabpanel" id="p-carnes" aria-labelledby="t-carnes" hidden>
-        <div class="colunas">
-          <div>
-            <p class="subtitulo">Bovinos</p>
-            <div class="item"><h4>Picanha</h4><span class="v">Rodízio</span><p>A estrela da casa, com a capa de gordura dourada no fogo.</p></div>
-            <div class="item"><h4>Picanha com alho</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Fraldinha</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Maminha</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Costela de chão</h4><span class="v">Rodízio</span><p>Assada por horas até soltar do osso.</p></div>
-            <div class="item"><h4>Contrafilé</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Cupim</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Alcatra com queijo</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Ancho</h4><span class="v">Rodízio</span></div>
-          </div>
-          <div>
-            <p class="subtitulo">Suínos, aves e cordeiro</p>
-            <div class="item"><h4>Costelinha suína ao mel</h4><span class="v">Rodízio</span><p>Pincelada com mel na hora de sair da brasa. O corte que dá nome à casa.</p></div>
-            <div class="item"><h4>Lombo com parmesão</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Linguiça toscana</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Coração de frango</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Coxinha da asa</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Frango com bacon</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Paleta de cordeiro</h4><span class="v">Rodízio</span></div>
-            <p class="subtitulo">Na mesa também</p>
-            <div class="item"><h4>Abacaxi com canela</h4><span class="v">Rodízio</span></div>
-            <div class="item"><h4>Pão de queijo, polenta e banana</h4><span class="v">Rodízio</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="painel" role="tabpanel" id="p-buffet" aria-labelledby="t-buffet" hidden>
-        <div class="japones">
-          <img src="assets/japones.jpg" alt="Ilha de japonês com sashimi de salmão, sushis e uramakis" loading="lazy">
-          <div>
-            <p class="subtitulo">Ilha de japonês</p>
-            <div class="item"><h4>Sashimi de salmão</h4><span class="v">Incluso</span></div>
-            <div class="item"><h4>Sushis, uramakis e hossomakis</h4><span class="v">Incluso</span></div>
-            <div class="item"><h4>Joe de salmão e temaki do dia</h4><span class="v">Incluso</span></div>
-            <p class="subtitulo">Buffet</p>
-            <div class="item"><h4>Saladas e folhas</h4><span class="v">Incluso</span><p>Mais de 20 opções, com molhos da casa.</p></div>
-            <div class="item"><h4>Pratos quentes</h4><span class="v">Incluso</span><p>Arroz, feijão tropeiro, farofa, mandioca, risotos e massas do dia.</p></div>
-            <div class="item"><h4>Queijos e frios</h4><span class="v">Incluso</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="painel" role="tabpanel" id="p-sobremesas" aria-labelledby="t-sobremesas" hidden>
-        <div class="colunas">
-          <div class="item"><h4>Petit gâteau com sorvete</h4><span class="v">R$ 32,90</span><p>Chocolate quente por dentro e sorvete de creme.</p></div>
-          <div class="item"><h4>Pudim de leite</h4><span class="v">R$ 22,90</span><p>Receita da casa, com calda de caramelo.</p></div>
-          <div class="item"><h4>Papaya com cassis</h4><span class="v">R$ 26,90</span></div>
-          <div class="item"><h4>Mousse de maracujá</h4><span class="v">R$ 21,90</span></div>
-          <div class="item"><h4>Torta de limão</h4><span class="v">R$ 24,90</span></div>
-          <div class="item"><h4>Abacaxi grelhado com sorvete e mel</h4><span class="v">R$ 27,90</span><p>A sobremesa do favo: abacaxi da brasa, sorvete de creme e um fio de mel.</p></div>
-          <div class="item"><h4>Taça de sorvete</h4><span class="v">R$ 19,90</span><p>Três bolas, sabores do dia.</p></div>
-          <div class="item"><h4>Brownie com sorvete</h4><span class="v">R$ 29,90</span></div>
-        </div>
-      </div>
-
-      <div class="painel" role="tabpanel" id="p-bebidas" aria-labelledby="t-bebidas" hidden>
-        <div class="colunas">
-          <div>
-            <p class="subtitulo">Sem álcool</p>
-            <div class="item"><h4>Refrigerante lata</h4><span class="v">R$ 8,90</span></div>
-            <div class="item"><h4>Suco natural, jarra</h4><span class="v">R$ 24,90</span></div>
-            <div class="item"><h4>Água com ou sem gás</h4><span class="v">R$ 6,90</span></div>
-          </div>
-          <div>
-            <p class="subtitulo">Com álcool</p>
-            <div class="item"><h4>Chopp claro, 300 ml</h4><span class="v">R$ 13,90</span></div>
-            <div class="item"><h4>Caipirinha de limão</h4><span class="v">R$ 26,90</span></div>
-            <div class="item"><h4>Taça de vinho tinto</h4><span class="v">R$ 29,90</span><p>Carta completa de vinhos no salão.</p></div>
-          </div>
-        </div>
-      </div>
-
-      <p class="nota">Preços por pessoa. Taxa de serviço opcional de 10%. Valores podem mudar sem aviso.</p>
+      <div class="abas" role="tablist" aria-label="Seções do cardápio" id="abas-cardapio"></div>
+      <div id="paineis-cardapio"><p class="nota" style="margin-top:0">Carregando o cardápio...</p></div>
+      <p class="nota" id="nota-cardapio"></p>
     </div>
   </section>
 
@@ -430,19 +334,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;
 document.documentElement.classList.add("js");
 const WHATSAPP = "5562999999999"; // número da casa, só dígitos com DDI e DDD
 const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-/* abas do cardápio */
-const abas=[...document.querySelectorAll('[role="tab"]')];
-function abrir(aba){
-  abas.forEach(a=>{const on=a===aba;a.setAttribute("aria-selected",on);a.tabIndex=on?0:-1;document.getElementById(a.getAttribute("aria-controls")).hidden=!on;});
-}
-abas.forEach((a,i)=>{
-  a.addEventListener("click",()=>abrir(a));
-  a.addEventListener("keydown",e=>{
-    if(e.key!=="ArrowRight"&&e.key!=="ArrowLeft")return;
-    const n=abas[(i+(e.key==="ArrowRight"?1:-1)+abas.length)%abas.length];abrir(n);n.focus();
-  });
-});
 
 /* hero: a foto aproxima devagar enquanto você rola */
 const foto=document.getElementById("heroFoto");
@@ -526,5 +417,96 @@ WhatsApp: ${f.tel.trim()}${f.obs.trim()?"\nObservações: "+f.obs.trim():""}`;
   p.querySelector("#nova").onclick=()=>location.reload();
 });
 </script>
+<script>
+/* Cardápio inteiro vem de content/cardapio.json, editado pelo Decap CMS */
+async function carregarCardapio() {
+  const abasEl = document.getElementById("abas-cardapio");
+  const paineisEl = document.getElementById("paineis-cardapio");
+  const notaEl = document.getElementById("nota-cardapio");
+  const el = (tag, classe, texto) => { const e = document.createElement(tag); if (classe) e.className = classe; if (texto != null && texto !== "") e.textContent = texto; return e; };
 
-</body></html>
+  function itemEl(i) {
+    const d = el("div", "item");
+    d.appendChild(el("h4", "", i.nome));
+    d.appendChild(el("span", "v", i.preco || ""));
+    if (i.descricao) d.appendChild(el("p", "", i.descricao));
+    return d;
+  }
+
+  try {
+    const r = await fetch("content/cardapio.json", { cache: "no-cache" });
+    if (!r.ok) throw new Error("Não foi possível carregar o cardápio.");
+    const dados = await r.json();
+    paineisEl.textContent = "";
+    const abas = [];
+
+    function novaAba(nome, idx) {
+      const b = el("button", "", nome);
+      b.setAttribute("role", "tab"); b.id = "t-" + idx;
+      b.setAttribute("aria-controls", "p-" + idx);
+      const p = el("div", "painel"); p.setAttribute("role", "tabpanel");
+      p.id = "p-" + idx; p.setAttribute("aria-labelledby", b.id);
+      abasEl.appendChild(b); paineisEl.appendChild(p); abas.push(b);
+      return p;
+    }
+
+    /* aba do rodízio, com os cartões de preço */
+    if (dados.rodizio && (dados.rodizio.precos || []).length) {
+      const p = novaAba(dados.rodizio.titulo_aba || "Rodízio", "rodizio");
+      const grade = el("div", "precos");
+      dados.rodizio.precos.forEach(c => {
+        const card = el("div", "preco" + (c.destaque ? " destaque" : ""));
+        card.appendChild(el("h3", "", c.titulo));
+        const v = el("span", "valor"); v.textContent = c.valor || ""; card.appendChild(v);
+        if (c.descricao) card.appendChild(el("p", "", c.descricao));
+        grade.appendChild(card);
+      });
+      p.appendChild(grade);
+      if ((dados.rodizio.extras || []).length) {
+        const col = el("div", "colunas");
+        dados.rodizio.extras.forEach(i => col.appendChild(itemEl(i)));
+        p.appendChild(col);
+      }
+    }
+
+    /* demais abas: grupos de itens, com foto opcional */
+    (dados.abas || []).forEach((aba, n) => {
+      const p = novaAba(aba.nome, n);
+      const grupos = el("div", "colunas");
+      (aba.grupos || []).forEach(g => {
+        const bloco = el("div");
+        if (g.titulo) bloco.appendChild(el("p", "subtitulo", g.titulo));
+        (g.itens || []).forEach(i => bloco.appendChild(itemEl(i)));
+        grupos.appendChild(bloco);
+      });
+      if (aba.foto) {
+        const wrap = el("div", "japones");
+        const img = el("img"); img.src = aba.foto; img.alt = aba.nome; img.loading = "lazy";
+        wrap.appendChild(img); grupos.style.gridTemplateColumns = "1fr"; wrap.appendChild(grupos);
+        p.appendChild(wrap);
+      } else p.appendChild(grupos);
+    });
+
+    notaEl.textContent = dados.observacao || "";
+
+    function abrir(aba) {
+      abas.forEach(a => { const on = a === aba; a.setAttribute("aria-selected", on); a.tabIndex = on ? 0 : -1; document.getElementById(a.getAttribute("aria-controls")).hidden = !on; });
+    }
+    abas.forEach((a, i) => {
+      a.addEventListener("click", () => abrir(a));
+      a.addEventListener("keydown", e => {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        const nx = abas[(i + (e.key === "ArrowRight" ? 1 : -1) + abas.length) % abas.length]; abrir(nx); nx.focus();
+      });
+    });
+    if (abas.length) abrir(abas[0]);
+  } catch (erro) {
+    console.error(erro);
+    paineisEl.textContent = "Não foi possível carregar o cardápio.";
+  }
+}
+carregarCardapio();
+</script>
+
+</body>
+</html>
