@@ -6,12 +6,18 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "paginas"
-    label: "Páginas"
+  - name: "cardapio"
+    label: "Cardápio"
     files:
-      - name: "inicio"
-        label: "Página inicial"
-        file: "content/inicio.md"
+      - name: "pratos"
+        label: "Pratos do restaurante"
+        file: "content/cardapio.json"
         fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Texto", name: "body", widget: "markdown"}
+          - label: "Pratos"
+            name: "pratos"
+            widget: "list"
+            fields:
+              - { label: "Nome", name: "nome", widget: "string" }
+              - { label: "Descrição", name: "descricao", widget: "text" }
+              - { label: "Preço", name: "preco", widget: "string" }
+              - { label: "Foto", name: "foto", widget: "image", required: false }
