@@ -139,7 +139,8 @@
             }
           ]
         }
-      ]
+      ],
+      "cartoes": false
     },
     {
       "nome": "Buffet e japonês",
@@ -185,7 +186,8 @@
             }
           ]
         }
-      ]
+      ],
+      "cartoes": false
     },
     {
       "nome": "Sobremesas",
@@ -241,7 +243,8 @@
             }
           ]
         }
-      ]
+      ],
+      "cartoes": true
     },
     {
       "nome": "Bebidas",
@@ -287,7 +290,8 @@
             }
           ]
         }
-      ]
+      ],
+      "cartoes": false
     }
   ],
   "observacao": "Preços por pessoa. Taxa de serviço opcional de 10%. Valores podem mudar sem aviso."

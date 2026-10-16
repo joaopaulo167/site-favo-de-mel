@@ -49,6 +49,7 @@ collections:
             fields:
               - { label: "Nome da aba", name: "nome", widget: "string", hint: "Ex.: Sobremesas" }
               - { label: "Foto da aba (opcional)", name: "foto", widget: "image", required: false }
+              - { label: "Mostrar como cartões com foto", name: "cartoes", widget: "boolean", default: false, required: false, hint: "Cada item vira um cartão: foto em cima, depois nome, descrição e preço" }
               - label: "Grupos"
                 name: "grupos"
                 widget: "list"

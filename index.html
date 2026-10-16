@@ -132,6 +132,16 @@ section{padding-block:110px}
 .item h4::after{content:"";flex:1;border-bottom:1px dotted rgba(224,168,62,.35);transform:translateY(-5px)}
 .item .v{font-family:var(--display);font-size:20px;color:var(--mel-claro);font-variant-numeric:tabular-nums;white-space:nowrap}
 .item p{grid-column:1/-1;color:var(--fumaca);font-size:15px}
+.cartoes{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px;margin-bottom:12px}
+.cartao-item{background:var(--brasa);border:1px solid var(--madeira);display:flex;flex-direction:column;gap:8px;padding-bottom:22px;overflow:hidden;transition:border-color .4s,box-shadow .4s}
+.cartao-item:hover{border-color:rgba(224,168,62,.5);box-shadow:0 0 40px rgba(224,168,62,.08)}
+.cartao-foto{aspect-ratio:4/3;overflow:hidden;margin-bottom:8px;background:var(--noite) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='72.75' viewBox='0 0 42 72.75'%3E%3Cpath fill='none' stroke='%23e0a83e' stroke-opacity='.25' stroke-width='1.3' d='M21 0 L42 12.12 L42 36.37 L21 48.5 L0 36.37 L0 12.12Z M21 48.5 L21 72.75'/%3E%3C/svg%3E") center/28px 48.5px}
+.cartao-foto img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.cartao-item:hover .cartao-foto img{transform:scale(1.05)}
+.cartao-item>h4,.cartao-item>p,.cartao-item>.v{padding-inline:20px}
+.cartao-item h4{font-family:var(--display);font-weight:400;font-size:21px;margin:0}
+.cartao-item p{color:var(--fumaca);font-size:15px;flex:1}
+.cartao-item .v{font-family:var(--display);font-size:22px;color:var(--mel-claro);font-variant-numeric:tabular-nums;margin-top:auto}
 .item-foto{grid-column:1/-1;width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--madeira);margin:10px 0 6px;filter:saturate(1.05) brightness(.92)}
 .subtitulo{font-family:var(--caps);letter-spacing:.2em;font-size:14px;color:var(--mel);margin:44px 0 6px}
 .subtitulo:first-child{margin-top:0}
@@ -474,6 +484,25 @@ async function carregarCardapio() {
     /* demais abas: grupos de itens, com foto opcional */
     (dados.abas || []).forEach((aba, n) => {
       const p = novaAba(aba.nome, n);
+      if (aba.cartoes) {
+        /* modo cartões: foto em cima, depois nome, descrição e preço */
+        (aba.grupos || []).forEach(g => {
+          if (g.titulo) p.appendChild(el("p", "subtitulo", g.titulo));
+          const grade = el("div", "cartoes");
+          (g.itens || []).forEach(i => {
+            const c = el("article", "cartao-item");
+            const ft = el("div", "cartao-foto");
+            if (i.foto) { const im = el("img"); im.src = i.foto; im.alt = i.nome; im.loading = "lazy"; ft.appendChild(im); }
+            c.appendChild(ft);
+            c.appendChild(el("h4", "", i.nome));
+            if (i.descricao) c.appendChild(el("p", "", i.descricao));
+            c.appendChild(el("span", "v", i.preco || ""));
+            grade.appendChild(c);
+          });
+          p.appendChild(grade);
+        });
+        return;
+      }
       const grupos = el("div", "colunas");
       (aba.grupos || []).forEach(g => {
         const bloco = el("div");
