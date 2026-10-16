@@ -1,0 +1,10 @@
+{
+  "pratos": [
+    {
+      "nome": "Picanha",
+      "descricao": "Picanha na brasa acompanhada de guarnições.",
+      "preco": "R$ 79,90",
+      "foto": "/images/picanha.jpg"
+    }
+  ]
+}
