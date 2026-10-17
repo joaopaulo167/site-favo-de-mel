@@ -37,7 +37,7 @@
   "abas": [
     {
       "nome": "Carnes",
-      "foto": "/images/imagem-carne.jpg",
+      "foto": "images/imagem-carne.jpg",
       "grupos": [
         {
           "titulo": "Bovinos",

@@ -4,7 +4,7 @@ backend:
   branch: main
 locale: pt
 media_folder: "images"
-public_folder: "/images"
+public_folder: "images"
 
 collections:
   - name: "cardapio"
