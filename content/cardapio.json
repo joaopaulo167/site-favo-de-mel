@@ -199,22 +199,26 @@
             {
               "nome": "Petit gâteau com sorvete",
               "preco": "R$ 32,90",
-              "descricao": "Chocolate quente por dentro e sorvete de creme."
+              "descricao": "Chocolate quente por dentro e sorvete de creme.",
+              "foto": "images/petit-gateau.jpg"
             },
             {
               "nome": "Pudim de leite",
               "preco": "R$ 22,90",
-              "descricao": "Receita da casa, com calda de caramelo."
+              "descricao": "Receita da casa, com calda de caramelo.",
+              "foto": "images/pudim.avif"
             },
             {
               "nome": "Papaya com cassis",
               "preco": "R$ 26,90",
-              "descricao": ""
+              "descricao": "",
+              "foto": "images/creme-papaya-01-1200x901.webp"
             },
             {
               "nome": "Mousse de maracujá",
               "preco": "R$ 21,90",
-              "descricao": ""
+              "descricao": "",
+              "foto": "images/mousse.avif"
             }
           ]
         },
